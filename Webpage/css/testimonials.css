@@ -52,6 +52,8 @@ body{
     width: 80%;
     height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 .menuwrap a{
     text-decoration: none;
@@ -105,10 +107,52 @@ body{
     flex-direction: column;
 
 }
+.allcomments{
+    height: 100vh;
+    overflow-y: scroll;
+}
 hr{
     border: 1px solid rgb(47, 47, 47);
     width: 90%;
 }
+.commentarea button{
+    color: #75ff7a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #75ff7a;
+    background-color: rgb(231, 231, 231, 0.0);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 40px;
+}
+.commentarea{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.commentarea input{
+    margin-left: 50px;
+    background-color:rgb(47, 47, 47);
+    border-style: none;
+    color: white;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+}
+.commentarea img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: -30px;
+}
+::placeholder {
+    text-align: center;
+  }
 .profile{
     align-items: center;
     display: flex;
@@ -148,15 +192,16 @@ button:hover{
         overflow-y: hidden;
     }
     .menuwrap{
-        margin-left: 20%;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
     }
     .icons,hr{
         display: none
     }
-
+    .allcomments{
+        height: 70vh;
+    }
     .menubutton{
         font-size: 15px;
         padding: 20px;

@@ -124,6 +124,7 @@ body{
 }
 
 .greeting{
+    margin-top: 50px;
     padding: 10px;
     overflow-y: scroll;
     text-align: justify;
@@ -169,7 +170,7 @@ button:hover{
         margin-left: 20%;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
     }
     .icons,hr{
         display: none
